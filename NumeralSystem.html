@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Системы счисления</title>
+    <link rel="stylesheet" href="./Styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#">Системы счисления</a>
+            <div class="header-buttons">
+                <button id="help-button">
+                    <img src="icons/bx_question-mark.svg" alt="Помощь" class="btn-icon">
+                </button>
+                <button id="theme-toggle-button">
+                    <img src="icons/bx_moon.svg" alt="Тема" class="btn-icon">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="main-content">
+                <div class="part" id="converter">
+                    <h2>Перевод</h2>
+                    <div class="input-group">
+                        <input type="text" placeholder="1234567890ABCdef" class="input-field">
+                        <p>из</p>
+                        <input type="number" placeholder="2" class="CC" id="fromCC">
+                        <p>в</p>
+                        <input type="number" placeholder="16" class="CC" id="toCC">
+                    </div>
+                    <button class="main-button" id="convert">Перевести</button>
+                </div>
+                <div class="part" id="calculator">
+                    <h2>Калькулятор в одной СС</h2>
+                    <div class="input-group">
+                        <input type="text" placeholder="1234567890ABCdef" class="input-field" id="calcInput1">
+                        <button class="operation" id="calcOp">+</button>
+                        <input type="text" placeholder="1234567890ABCdef" class="input-field" id="calcInput2">
+                        <p>в</p>
+                        <input type="number" placeholder="16" class="CC" id="calcCC">
+                    </div>
+                    <button class="main-button" id="calculate">Вычислить</button>
+                </div>
+                <div class="part" id="multicalculator">
+                    <h2>Калькулятор в разных СС</h2>
+                    <div class="input-group">
+                        <input type="text" placeholder="1234567890ABCdef" class="input-field" id="multicalcInput1">
+                        <input type="number" placeholder="2" class="CC" id="multicalcCC1">
+                        <button class="operation" id="multicalcOp">+</button>
+                        <input type="text" placeholder="1234567890ABCdef" class="input-field" id="multicalcInput2">
+                        <input type="number" placeholder="16" class="CC" id="multicalcCC2">
+                    </div>
+                    <div class="input-group" id="Dif">
+                        <input type="number" placeholder="16" class="CC" id="multicalcCCOut">
+                        <button class="main-button" id="multicalculate">Вычислить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Панжинская Вероника, ПИБ-21з</p>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
